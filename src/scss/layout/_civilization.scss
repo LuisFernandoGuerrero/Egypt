@@ -1,0 +1,59 @@
+.civilization {
+    text-align: center; 
+    line-height: normal;
+    margin-top: 8rem;
+
+}
+
+.civiInfo {
+    text-align: start;
+    line-height: 2;
+
+    @include tablet {
+        @include grid(2, 5rem);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    p {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        color: $blanco;
+        @include desktop{ 
+            padding-right: 10rem;
+            padding-left: 10rem;
+        }
+    }
+}
+
+iframe {
+    width: 90%;
+    height: 20rem;
+    @include tablet {
+        width: 95%;
+        height: 60rem;
+    }
+    @include desktop {
+        width: 75%;
+    }
+}
+
+.titleSection {
+    font-family: $montserrat;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: lighten($negro, 25);
+    margin: 0;
+    margin-bottom: 1.6rem;
+}
+
+.subtitleSection {
+    font-size: 3.4rem;
+    margin: 0;
+    text-transform: capitalize;
+    color: $blanco;
+    span {
+        color: lighten($negro, 20);
+    }
+}

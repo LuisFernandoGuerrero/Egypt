@@ -1,0 +1,134 @@
+.header {
+    background-image: url('/build/img/piramides2.webp');
+    height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -10rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.logotipe {
+    h1 {
+        margin: 0;
+        text-transform: uppercase;
+        color: $blanco;
+        font-weight: 700;
+        span {
+            color: $naranja;
+        }
+    }
+}
+
+.navegation {
+    display: none;
+
+    @include desktop{
+        display: block;
+        ul {
+            display: flex;
+            gap: 4rem;
+            margin-bottom: 0;
+            width: 100rem;
+            justify-content: flex-end;
+            a {
+                color: $blanco;
+                font-size: 2rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+    
+}
+
+.box {
+    width: 3rem;
+    height: 3rem;
+}
+
+// CENTER
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.social {
+    padding-top: 8rem;
+    li {
+        transform: rotate(270deg);
+    }
+    a {
+        color: $blanco;
+    }
+}
+
+.centerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        text-transform: uppercase;
+        color: lighten($naranja, 10);
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 2rem;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 5rem;
+            height: .3rem;
+            background-color: currentColor;
+            bottom: 0;
+            left: 3rem;
+        }
+    }
+
+    .subtitle {
+        max-width: 90rem;
+        color: $blanco;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 8rem;
+        font-size: 6rem;
+    }
+
+    .scrolldown {
+        color: lighten($azul, 25);
+        text-align: center;
+        line-height: 3rem;
+        margin-top: 5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        i {
+            color: lighten($azul, 32);
+            font-size: 5rem;
+        }
+    }
+}
+
+.gotoegypt {
+    writing-mode: tb;
+    padding-top: 8rem;
+    p {
+        margin: 0 auto;
+        color: $blanco;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+
+.hola {
+    height: 100vh;
+}

@@ -1,0 +1,43 @@
+.thanks {
+    text-align: center;
+    max-width: 98%;
+}
+.partners {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    @include tablet {
+        @include grid(2, 1rem);
+        row-gap: 10rem;
+        margin-bottom: 15rem;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15rem;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+    }
+}
+
+.containerPartners {
+    display: flex;
+    flex-direction: column;
+}
+.imageSponsor {
+    width: 14rem;
+    height: 5rem;
+}
+.contenedorjinete {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    width: 100%;
+}
+.jinete {
+    width: 25rem;
+    height: 30rem;
+}
