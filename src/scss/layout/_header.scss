@@ -4,6 +4,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -10rem;
+    background-attachment: fixed;
+
+    @include tablet {
+        height: 110vh;
+    }
 }
 
 .top {
@@ -99,7 +104,12 @@
         font-weight: 700;
         line-height: normal;
         padding-top: 8rem;
-        font-size: 6rem;
+        font-size: 3rem;
+
+        @include tablet {
+            font-size: 6rem;
+
+        }
     }
 
     .scrolldown {

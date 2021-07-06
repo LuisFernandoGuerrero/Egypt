@@ -15,8 +15,11 @@ body {
     font-family: $blacker;
     user-select: none;
     background: rgb(216,177,136);
-    background: linear-gradient(180deg, rgba(216,177,136,1) 78%, rgba(216,158,99,1) 0%);
+    background: linear-gradient(180deg, rgba(216,177,136,1) 73%, rgba(216,158,99,1) 0%);
     color: $negro;
+    @include tablet {
+        background: linear-gradient(180deg, rgba(216,177,136,1) 78%, rgba(216,158,99,1) 0%);
+    }
 }
 
 .contenedor {

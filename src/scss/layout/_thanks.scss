@@ -1,6 +1,10 @@
 .thanks {
     text-align: center;
     max-width: 98%;
+    padding-top: 10rem;
+    @include tablet {
+        padding-top: 0rem;
+    }
 }
 .partners {
     display: flex;
